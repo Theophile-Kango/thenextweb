@@ -20,6 +20,7 @@ main{
 .logo{
   display: flex;
   border-bottom: 1px solid #ccc;
+  height: 30px;
 }
 .logo ul{
     display: flex;
@@ -28,20 +29,22 @@ main{
 }
 .logo ul li{
     display: flex;
-    padding: 15px 5px;
+    padding: 5px 5px;
     width: 50px;
     border-left: 1px solid #ccc;
     justify-content: center;
 }
 .logo ul li i{
-    font-size: 30px;
+    font-size: 20px;
     cursor: pointer;
 }
 .logo ul li #menu{
     color: #ff4422;
 }
 header .logo img{
-    width: 100px;
+    background: #ff4422;
+    width: 10%;
+    padding: 5px;
     cursor: pointer;
 }
 header .tech{
@@ -363,6 +366,12 @@ main .latest-funding #hide{
    header .logo ul{
        display: none;
    }
+   
+   header .logo img{
+    width: 92%;
+    height: 232%;
+}
+ 
    main{
     position: relative;
     top: 125px;
