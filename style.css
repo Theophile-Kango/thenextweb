@@ -55,7 +55,7 @@ header .tech h3{
     font-weight: normal;
     font-size: 16px;
 }
-main .section-content{
+main .principal{
     width: 96%;
     margin-bottom: 10px;
 }
@@ -128,7 +128,6 @@ h1, h1 i{
     margin-top: -8%;
     margin-left: 3%;
     box-sizing: border-box;
-
 }
 .latest-funding .funding-1 .header{
     height: 40px;
@@ -173,9 +172,15 @@ h1, h1 i{
 .section-content{
     margin-left: 10px;
     background: black;
-    margin-bottom: 20%;
     height: 300px;
     width: 90%;
+}
+section{
+    width: 90%;
+    margin-bottom: 10px;
+}
+section .section-content{
+    width: 100%;
 }
 .section-content img{
     height: 300px;
@@ -195,4 +200,225 @@ h1, h1 i{
 .section-content .section-text p{
   font-weight: bolder;
   font-size: 20px;
+}
+.latest-section{
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 20px;
+    background: #f5cdc6;
+    color:#ff4422;
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 10px;
+}
+.latest-section>div{
+    margin-top: 5px;
+}
+.latest-section img{
+    width: 25%;
+    height: 100px;
+}
+section ul{
+    margin-left: 10px;
+}
+section ul li{
+    border-bottom: 1px solid rgb(185, 184, 184);
+}
+section ul li::before {
+    line-height: 1.5rem;
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #ff4422;
+}
+section ul li a{
+    font-size: 12px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: grey;
+}
+section ul li a:hover{
+    color: black;
+}
+h1{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+h1 a{
+    color: #ff4422;
+    font-size: 15px;
+    text-decoration: none;
+}
+main footer{
+    background: #1b1a1a;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+    justify-content: center;
+    height: 200px;
+}
+main footer ul{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main footer ul li{
+    display: flex;
+    
+}
+main footer ul li a i{
+    color: white;
+    font-size: 2rem;
+}
+main footer ul .social{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+header .nav{
+    display: none;
+}
+main footer ul .contact{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+main footer ul .contact li a{
+    color: grey;
+    text-decoration: none;
+}
+main footer #second-ul{
+    background: #111111;
+    line-height: 1.5rem;
+    width: 100%;
+}
+main footer #second-ul li span{
+    color: white;
+}
+@media screen and (min-width: 768px) {
+    
+    header{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+    header .nav{
+       display: flex;
+       flex-direction: column;
+   }
+   header .nav ul li{
+       display: flex;
+   }
+   header .nav #first{
+       background: #111111;
+       height: 40px;
+       display: flex;
+       align-items: center;
+   }
+
+   header .nav #second{
+     display: flex;
+     height: 40px; 
+     align-items: center; 
+   }
+   header .nav #second #search{
+       display: flex;
+       flex-grow: 2;
+       justify-content: flex-end;
+   }
+   header .nav #first li, header .nav #second li{
+       margin-left: 15px;
+   }
+   header .nav ul li a{
+    color: grey;
+    text-decoration: none;
+   }
+   header .nav #first li a:hover{
+       color: white;
+   }
+   header .tech{
+       grid-column: 1/3;
+   }
+   header .logo ul{
+       display: none;
+   }
+   main{
+    position: relative;
+    top: 125px;
+   }
+   main .main-content{
+    display: flex;
+    height: 500px;
+ 
+   }
+   main .main-content #first-img,  main .main-content #first-img img{
+       height: 100%;
+   }
+   main .main-content .second-content {
+       width: 50%;
+       height: 98%;
+   }
+   main .main-content .second-content .section-content{
+    
+    width: 100%;
+    height: 50%;
+   } 
+#first-img .section-text{
+    bottom: 20%;
+      
+}
+.second-content .section-text{
+    bottom: 45%;
+    font-size: 10px;
+    margin: 0;
+    padding: 3px;
+    
+}
+   main .main-content .second-content .section-content img{
+       width: 100%;
+       height: 100%;
+   }
+   main .news-container{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+   main .news-container .latest-news{
+       flex-direction: column;
+       margin-bottom: 20px;
+       width: 80%;
+   }
+   main .news-container .latest-news p{
+       width: 100%;
+       height: 100%;
+       margin-left: 0;
+   }
+   main .news-container .latest-news img{
+       width: 300%;
+       height: 100%;
+   }
+   main .list ul{
+       display: flex;
+       flex-direction: row;
+   }
+   main .list ul li{
+       border-right: 1px solid #ff4422;
+       padding: 0 8px;
+   }
+   main .list ul #last-li{
+       border: none;
+   }
+   main .latest-funding{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+   main .latest-funding .header img{
+       width: 50%;
+   }
 }
