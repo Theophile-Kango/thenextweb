@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
+
 header{
   display: flex;
   position: fixed;
@@ -70,12 +72,12 @@ main .section-content img{
 main .section-content .section-text {
     font-size: 12px;
 }
-h1{
+h2, h1{
     margin-left: 2%;
     cursor: pointer;
     margin-bottom: 20px;
 }
-h1, h1 i{
+h1, h2, h2 i, h1 i{
     color: #ff4422;   
 }
 
@@ -262,8 +264,10 @@ main footer{
     color: grey;
     justify-content: center;
     height: 200px;
+    width: 100%;
+    box-sizing: border-box;
 }
-main footer ul{
+main footer nav{
     width: 50%;
     height: 100px;
     display: flex;
@@ -279,7 +283,8 @@ main footer ul li a i{
     color: white;
     font-size: 2rem;
 }
-main footer ul .social{
+main footer .social{
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     align-items: center;
@@ -289,13 +294,13 @@ main footer ul .social{
 header .nav{
     display: none;
 }
-main footer ul .contact{
+main footer .contact{
     width: 90%;
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
 }
-main footer ul .contact li a{
+main footer nav .contact li a{
     color: grey;
     text-decoration: none;
 }
@@ -303,6 +308,12 @@ main footer #second-ul{
     background: #111111;
     line-height: 1.5rem;
     width: 100%;
+    
+}
+main footer #second-ul ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 main footer #second-ul li span{
     color: white;
@@ -489,10 +500,10 @@ main .latest-funding #hide{
        width: 100%;
        height: 180px;
    }
-   footer #second-ul{
-       display: flex;
-       flex-direction: row;
-   }
+   main footer #second-ul ul{
+    display: flex;
+    flex-direction: row;
+}
 }
    @media screen and (min-width: 1024px) {
       header .logo{
