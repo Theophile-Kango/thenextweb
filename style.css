@@ -78,11 +78,13 @@ main footer ul li a i {
   height: 300px;
   width: 100%;
   opacity: 0.5;
+  object-fit: cover;
 }
 
 .latest-section img {
   width: 25%;
   height: 100px;
+  object-fit: cover;
 }
 
 header .logo img {
@@ -147,6 +149,7 @@ h1 {
 .latest-news .news img {
   width: 90%;
   height: 150%;
+  object-fit: cover;
 }
 
 .latest-news p {
@@ -482,31 +485,37 @@ main .latest-funding #hide {
   main .news-container .latest-news img {
     width: 300%;
     height: 100%;
+    object-fit: cover;
   }
 
   .latest-list .latest-news .news img {
     width: 100%;
     height: 180px;
+    object-fit: cover;
   }
 
   main .main-content .second-content .section-content img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 
   main .latest-funding .funding-1 .header img {
     margin-top: -4%;
     width: 15%;
+    object-fit: cover;
   }
 
   main .main-content #first-img,
   main .main-content #first-img img {
     height: 100%;
+    object-fit: cover;
   }
 
   main .main-content .second-content {
     width: 50%;
     height: 98%;
+    object-fit: cover;
   }
 
   main .main-content .second-content .section-content {
