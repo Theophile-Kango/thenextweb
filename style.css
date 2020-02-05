@@ -26,10 +26,23 @@ main {
   height: 100%;
 }
 
+section ul {
+  margin-left: 10px;
+  list-style: none;
+}
+
 .logo ul {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+}
+
+section ul li {
+   border-bottom: 1px solid rgb(185, 184, 184);
+}
+
+main footer ul li {
+  display: flex;
 }
 
 .logo ul li {
@@ -40,6 +53,18 @@ main {
   justify-content: center;
 }
 
+h1,
+h2,
+h2 i,
+h1 i {
+  color: #f42;
+}
+
+main footer ul li a i {
+  color: white;
+  font-size: 2rem;
+}
+
 .logo ul li i {
   font-size: 20px;
   cursor: pointer;
@@ -47,6 +72,17 @@ main {
 
 .logo ul li #menu {
   color: #f42;
+}
+
+.section-content img {
+  height: 300px;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.latest-section img {
+  width: 25%;
+  height: 100px;
 }
 
 header .logo img {
@@ -79,6 +115,13 @@ main .section-content img {
   margin-bottom: 0;
 }
 
+.section-content .section-text {
+  margin-left: 20px;
+  position: relative;
+  color: white;
+  bottom: 35%;
+}
+
 main .section-content .section-text {
   font-size: 12px;
 }
@@ -87,13 +130,6 @@ h2,
 h1 {
   cursor: pointer;
   margin-bottom: 10px;
-}
-
-h1,
-h2,
-h2 i,
-h1 i {
-  color: #f42;
 }
 
 .latest-news {
@@ -138,9 +174,31 @@ h1 i {
   margin-bottom: 8px;
 }
 
+section ul li a {
+  font-size: 12px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: grey;
+}
+
+h1 a {
+  color: #f42;
+  font-size: 15px;
+  text-decoration: none;
+}
+
 .list ul li a {
   text-decoration: none;
   color: #f42;
+}
+
+section ul li a:hover {
+  color: black;
+}
+
+main footer nav .contact li a {
+  color: grey;
+  text-decoration: none;
 }
 
 .list ul li a:hover {
@@ -199,6 +257,11 @@ h1 i {
   cursor: pointer;
 }
 
+.section-content .section-text p {
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
 .latest-funding .funding-1 .footer p {
   line-height: 20px;
   font-size: 14px;
@@ -224,31 +287,13 @@ section .section-content {
   width: 100%;
 }
 
-.section-content img {
-  height: 300px;
-  width: 100%;
-  opacity: 0.5;
-}
-
 .main-content h2 {
   color: white;
-}
-
-.section-content .section-text {
-  margin-left: 20px;
-  position: relative;
-  color: white;
-  bottom: 35%;
 }
 
 .section-content .section-text h5 {
   font-family: 'Courier New', Courier, monospace;
   font-weight: bolder;
-}
-
-.section-content .section-text p {
-  font-weight: bolder;
-  font-size: 20px;
 }
 
 .latest-section {
@@ -266,47 +311,16 @@ section .section-content {
   margin-top: 5px;
 }
 
-.latest-section img {
-  width: 25%;
-  height: 100px;
-}
-
-section ul {
-  margin-left: 10px;
-  list-style: none;
-}
-
-section ul li {
-  border-bottom: 1px solid rgb(185, 184, 184);
-}
-
 section ul li::before {
   line-height: 1.5rem;
   content: "\2022";
   color: #f42;
 }
 
-section ul li a {
-  font-size: 12px;
-  margin-left: 10px;
-  text-decoration: none;
-  color: grey;
-}
-
-section ul li a:hover {
-  color: black;
-}
-
 h1 {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-}
-
-h1 a {
-  color: #f42;
-  font-size: 15px;
-  text-decoration: none;
 }
 
 main footer {
@@ -332,15 +346,6 @@ main footer nav {
   align-items: center;
 }
 
-main footer ul li {
-  display: flex;
-}
-
-main footer ul li a i {
-  color: white;
-  font-size: 2rem;
-}
-
 main footer .social {
   box-sizing: border-box;
   width: 100%;
@@ -359,11 +364,6 @@ main footer .contact {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-}
-
-main footer nav .contact li a {
-  color: grey;
-  text-decoration: none;
 }
 
 main footer #second-ul {
@@ -433,6 +433,11 @@ main .latest-funding #hide {
     font-size: 1.5rem;
   }
 
+  main .list ul li {
+    border-right: 1px solid #f42;
+    padding: 0 8px;
+  }
+
   header .nav #first li,
   header .nav #second li {
     margin-left: 15px;
@@ -474,6 +479,26 @@ main .latest-funding #hide {
     display: none;
   }
 
+  main .main-content .second-content .section-content img {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .news-container .latest-news img {
+    width: 300%;
+    height: 100%;
+  }
+
+  main .latest-funding .funding-1 .header img {
+    margin-top: -4%;
+    width: 15%;
+  }
+
+ .latest-list .latest-news .news img {
+    width: 100%;
+    height: 180px;
+  }
+
   main .main-content #first-img,
   main .main-content #first-img img {
     height: 100%;
@@ -489,25 +514,26 @@ main .latest-funding #hide {
     height: 50%;
   }
 
-  #first-img .section-text {
-    bottom: 20%;
-  }
-
-  .second-content .section-text {
+.second-content .section-text {
     bottom: 45%;
     font-size: 10px;
     margin: 0;
     padding: 3px;
-  }
+}
 
-  main .main-content .second-content .section-content img {
-    width: 100%;
-    height: 100%;
+  #first-img .section-text {
+    bottom: 20%;
   }
 
   main .news-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+ .latest-list .latest-news {
+    display: flex;
+    flex-direction: column;
+    height: 260px;
   }
 
   main .news-container .latest-news {
@@ -516,25 +542,23 @@ main .latest-funding #hide {
     width: 80%;
   }
 
+  
+  .latest-list .latest-news p {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin-left: 0;
+  }
+
   main .news-container .latest-news p {
     width: 100%;
     height: 100%;
     margin-left: 0;
   }
 
-  main .news-container .latest-news img {
-    width: 300%;
-    height: 100%;
-  }
-
   main .list ul {
     display: flex;
     flex-direction: row;
-  }
-
-  main .list ul li {
-    border-right: 1px solid #f42;
-    padding: 0 8px;
   }
 
   main .list ul #last-li {
@@ -545,11 +569,6 @@ main .latest-funding #hide {
     display: grid;
     height: 310px;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  main .latest-funding .funding-1 .header img {
-    margin-top: -4%;
-    width: 15%;
   }
 
   .latest-funding .funding-1 .latest-content {
@@ -573,19 +592,6 @@ main .latest-funding #hide {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .latest-list .latest-news {
-    display: flex;
-    flex-direction: column;
-    height: 260px;
-  }
-
-  .latest-list .latest-news p {
-    padding-top: 10px;
-    font-size: 0.9rem;
-    font-weight: bolder;
-    margin-left: 0;
-  }
-
   .latest-list .latest-news p small {
     color: grey;
     font-weight: normal;
@@ -593,11 +599,6 @@ main .latest-funding #hide {
 
   .latest-list .latest-news .news {
     width: 100%;
-  }
-
-  .latest-list .latest-news .news img {
-    width: 100%;
-    height: 180px;
   }
 
   main footer #second-ul ul {
@@ -619,7 +620,6 @@ main .latest-funding #hide {
   header .nav #first .first-2 {
     display: flex;
     color: grey;
-    display: flex;
     flex-grow: 2;
     margin-right: 10px;
     justify-content: flex-end;
