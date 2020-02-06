@@ -634,7 +634,7 @@ main .main-content #first-img #img-log {
     bottom: -20px;
     height: 40%;
   }
-  
+
   main footer .contact {
     width: 100%;
     font-size: 17px;
@@ -693,7 +693,7 @@ main .main-content #first-img #img-log {
 
   main .main-content #first-img #img-log {
     display: block;
-    background-image: linear-gradient(to top, rgba(255,0,0,0), #f42);
+    background-image: linear-gradient(to top,rgba(255,0,0,0),#f42);
     padding: 2% 28% 200px 2%;
     position: absolute;
     height: 300px;
