@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  box-sizing: border-box;
+}
+
 header {
   display: flex;
   position: fixed;
@@ -14,6 +24,7 @@ header {
   right: 0;
   width: 100%;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 main {
@@ -364,6 +375,7 @@ header .nav {
 
 main footer .contact {
   width: 90%;
+  height: 30%;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
@@ -390,6 +402,10 @@ main .nav .first-2 {
 }
 
 main .latest-funding #hide {
+  display: none;
+}
+
+main .main-content #first-img #img-log{
   display: none;
 }
 
@@ -609,6 +625,21 @@ main .latest-funding #hide {
     width: 100%;
   }
 
+  main footer ul li a i {
+    font-size: 2.5rem;
+  }
+
+  footer #second-ul{
+    position: relative;
+    bottom: -20px;
+    height: 40%;
+  }
+  
+  main footer .contact {
+    width: 100%;
+    font-size: 17px;
+  }
+
   main footer #second-ul ul {
     display: flex;
     flex-direction: row;
@@ -658,6 +689,17 @@ main .latest-funding #hide {
   main .latest-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  main .main-content #first-img #img-log{
+    display: block;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), #f42);
+    padding: 2% 28% 200px 2%;
+    position: absolute;
+    height: 300px;
+    top: 0;
+    width: 65.15%;
+    z-index: 1;
   }
 
   main .latest-funding #hide {
