@@ -13,7 +13,7 @@ Building a web page that is similar to the thenextweb web page with responsive w
 
 ## Live Demo
 
-[Live Demo](https://raw.githack.com/Theophile-Kango/thenextweb/feature/index.html)
+[Live Demo](https://theophile-kango.github.io/thenextweb/)
 
 ## Getting Started
 
